@@ -1,0 +1,375 @@
+
+
+{{ define "main" }} 
+<section class="banner-section banner-five">
+  <div class="banner-carousel strnix-carousel owl-theme owl-carousel"
+      data-options='{"loop": true, "margin": 0, "autoheight":false, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 0, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+      <!-- Slide Item -->
+      <div class="slide-item">
+          <div class="image-layer" style="background-image:url('{{ .Params.banner_image }}')"></div>
+
+          <div class="auto-container">
+              <div class="content-box">
+                  <div class="content">
+                      <div class="inner">
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+  </div>
+</section>
+
+<section class="about-section-four pb-0">
+
+<div class="auto-container">
+    <div class="row clearfix">
+        <div class="title-column col-lg-7 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"
+            data-wow-duration="2000ms">
+            <div class="inner">
+                <div class="sec-title">
+                    <h2>{{ .Params.welcome_heading }}</h2>
+                    <div class="bottom-dots clearfix">
+                        <span class="dot line-dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+
+                </div>
+                <div class="text-content text-justify">
+                    <p>{{ .Params.welcome_description }}</p>
+                    <p>{{ .Params.welcome_content }}</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-column col-lg-5 col-md-12 col-sm-12 cform">
+            <div class="featured-block-five col-lg-12 col-md-12 col-sm-12 wow fadeInRight"
+                data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-box">
+                    <div>
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-sm-4 col-form-label">Name:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="name" onchange="changeStyle('name')">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-4 col-form-label">Email ID:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="email" onchange="changeStyle('email')">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-4 col-form-label">Contact No:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="mobile" onchange="changeStyle('mobile')">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-4 col-form-label">Address:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="address" onchange="changeStyle('address')">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="text-center col-md-12 submit_btn1">
+                                <button class="mt-3 round_shadow_button submit_btn1" onclick="submit('form1')">Submit <i
+                                        class="fa fa-check-circle"></i></button>
+                                      </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    </div>
+
+
+</div>
+
+</section>
+
+<span class="cf_trigger">Get In Touch</span>
+<div class="cf_box">
+<span class="cf_close">
+    <i class="fas fa-times"></i>
+</span>
+<h3>Get In Touch</h3>
+<div>
+    <div class="form-group row">
+        <label for="staticEmail" class="col-sm-4 col-form-label">Name:</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="name2" onchange="changeStyle('name2')">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Email ID:</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="email2" onchange="changeStyle('email2')">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Contact No:</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control"  id="mobile2" onchange="changeStyle('mobile2')">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Address:</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="address2" onchange="changeStyle('address2')">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="text-center col-md-12 submit_btn2">
+            <button type="submit" class="mt-3 round_shadow_button submit_btn2" onclick="submit('form2')">Submit <i
+                    class="fa fa-check-circle"></i></button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<section class="team-section">
+
+  <div class="">
+      <div class="title-box clearfix">
+          <div class="sec-title fuel-theme" style="float: none;text-align: center;">
+              <h2>{{ .Params.solar_steps_heading }}</h2>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="">
+
+  <div class="auto-container">
+      <div class="row clearfix">
+          <!--Service Block-->
+          <div class="service-block-five col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
+              data-wow-duration="2000ms">
+              <div class="inner-box">
+                  <div class="image-box">
+                      <div class="content">
+                          <div class="text text-justify">{{ .Params.step_1 }}
+                              </div>
+                      </div>
+                  </div>
+                  <div class="title-box">
+                      <div class="title-inner">
+                          <h3>Step 1</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="service-block-five col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
+              data-wow-duration="2000ms">
+              <div class="inner-box">
+                  <div class="image-box">
+                      <div class="content">
+                          <div class="text text-justify">{{ .Params.step_2 }}
+                          </div>
+                      </div>
+                  </div>
+                  <div class="title-box">
+                      <div class="title-inner">
+                          <h3>Step 2</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="service-block-five col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
+              data-wow-duration="2000ms">
+              <div class="inner-box">
+                  <div class="image-box">
+                      <div class="content">
+                          <div class="text text-justify">{{ .Params.step_3 }}
+                          </div>
+                      </div>
+                  </div>
+                  <div class="title-box">
+                      <div class="title-inner">
+                          <h3>Step 3</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="service-block-five col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
+              data-wow-duration="2000ms">
+              <div class="inner-box">
+                  <div class="image-box">
+                      <div class="content">
+                          <div class="text text-justify">{{ .Params.step_4 }}
+                          </div>
+                      </div>
+                  </div>
+                  <div class="title-box">
+                      <div class="title-inner">
+                          <h3>Step 4</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="service-block-five col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
+              data-wow-duration="2000ms">
+              <div class="inner-box">
+                  <div class="image-box">
+                      <div class="content">
+                          <div class="text text-justify">{{ .Params.step_5 }}
+                          </div>
+                      </div>
+                  </div>
+                  <div class="title-box">
+                      <div class="title-inner">
+                          <h3>Step 5</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="service-block-five col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
+              data-wow-duration="2000ms">
+              <div class="inner-box">
+                  <div class="image-box">
+                      <div class="content">
+                          <div class="text text-justify">{{ .Params.step_6 }}
+                          </div>
+                      </div>
+                  </div>
+                  <div class="title-box">
+                      <div class="title-inner">
+                          <h3>Step 6</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+
+
+  </div>
+</section>
+<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=[YOUR_KEY_HERE]&libraries=places"></script> -->
+<script>
+
+// window.addEventListener("load", () => {
+//     const input = document.getElementById('location');
+//     const autocomplete = new google.maps.places.Autocomplete(input);
+
+// })
+
+  function changeStyle(params) {
+      document.getElementById(`${params}`).style.border = "1px solid gray";  
+  }
+
+  function clearForm() {
+      document.getElementById("name").value = "";
+      document.getElementById("name2").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("email2").value = "";
+      document.getElementById("mobile").value = "";
+      document.getElementById("mobile2").value = "";
+      document.getElementById("address").value = "";
+      document.getElementById("address2").value = "";
+  }
+
+  async function submit(form) {
+      let name;
+      let email;
+      let mobile;
+      let address;
+      let submit_btn_class;
+
+      if(form == "form1"){
+          submit_btn_class = "submit_btn1";
+          if ($("#name").val().trim() == "") {
+              document.getElementById("name").style.border = "3px solid red";
+          }
+
+          if ($("#email").val().trim() == "") {
+              document.getElementById("email").style.border = "3px solid red";
+          }
+
+          if ($("#mobile").val().trim() == "") {
+              document.getElementById("mobile").style.border = "3px solid red";
+          }
+
+          if ($("#address").val().trim() == "") {
+              document.getElementById("address").style.border = "3px solid red";
+          }
+
+          name = $("#name").val();
+          email = $("#email").val();
+          mobile = $("#mobile").val();
+          address = $("#address").val();
+
+      }else{
+          submit_btn_class = "submit_btn2";
+          if ($("#name2").val().trim() == "") {
+              document.getElementById("name").style.border = "3px solid red";
+          }
+
+          if ($("#email2").val().trim() == "") {
+              document.getElementById("email").style.border = "3px solid red";
+          }
+
+          if ($("#mobile2").val().trim() == "") {
+              document.getElementById("mobile").style.border = "3px solid red";
+          }
+
+          if ($("#address2").val().trim() == "") {
+              document.getElementById("address").style.border = "3px solid red";
+          }
+
+          name = $("#name2").val();
+          email = $("#email2").val();
+          mobile = $("#mobile2").val();
+          address = $("#address2").val();
+      }
+          
+
+      const data = {
+          name: name,
+          email: email,
+          mobile: mobile,
+          address: address,
+      };
+
+      if(!name || !email || !mobile || !address){
+          return false;
+      }
+
+      document.getElementsByClassName(`${submit_btn_class}`)[0].innerHTML = '<div class="spinner-border" style= "color:#073265; margin-top: 3%" role="status"><span class="sr-only">Loading...</span></div>'
+      
+     
+      await fetch("https://www.energyplatform.com.au/.netlify/functions/get-in-touch", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-type": "application/json",
+      }
+    }).then((response) => {
+              clearForm();
+              document.getElementsByClassName(`${submit_btn_class}`)[0].innerHTML = "<button type='submit' class='mt-3 round_shadow_button' onclick='submit(form)'>Submit <i class='fa fa-check-circle'></i></button>"
+          
+          })
+          .catch((err) => {
+              console.log(err);
+              clearForm();
+              document.getElementsByClassName(`${submit_btn_class}`)[0].innerHTML = "<button type='submit' class='mt-3 round_shadow_button' onclick='submit(form)'>Submit <i class='fa fa-check-circle'></i></button>"
+          });
+      }
+
+</script>
+
+{{ end }}

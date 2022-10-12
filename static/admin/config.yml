@@ -1,0 +1,113 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "static/images"
+collections:
+
+  - name: "Home" 
+    label: "Home"
+    folder: "content/english"
+    create: false
+    fields:
+      - { label: "Home", name: "title", widget: "string" }
+      - { label: "Header Image", name: "header_image", widget: "image" }
+      - { label: "Header Heading", name: "header_heading", widget: "string" }
+      - { label: "Header Content", name: "header_content", widget: "string" }
+      - { label: "User Image", name: "user_image", widget: "image" }
+      - { label: "Users", name: "users", widget: "string" }
+
+  - name: "Header" 
+    label: "Header"
+    folder: "content/english/header/header-menu"
+    create: true
+    fields:
+      - { label: "Header Title", name: "title", widget: "string" }
+      - { label: "Header Type", name: "type", widget: "string" }
+  
+  - name: "Footer" 
+    label: "Footer"
+    folder: "content/english/footer"
+    create: false
+    fields:
+      - { label: "Footer Title", name: "title", widget: "string" }
+      - { label: "Footer Email", name: "footer_email", widget: "string" }
+      - { label: "Footer Phone 1", name: "footer_phone_1", widget: "string" }
+      - { label: "Footer Phone 2", name: "footer_phone_2", widget: "string" }
+      - { label: "Footer Type", name: "type", widget: "string" }
+
+  - name: "Sliders" 
+    label: "Sliders"
+    folder: "content/english/sliders"
+    create: true
+    fields:
+      - { label: "Slider Title", name: "title", widget: "string" }
+      - { label: "Slider Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Slider Image", name: "bg_image", widget: "image" }
+      - { label: "Slider Type", name: "type", widget: "image" }
+
+  - name: "Teams" 
+    label: "Teams"
+    folder: "content/english/team/atcults-team"
+    create: true
+    fields:
+      - { label: "Team Title", name: "title", widget: "string" }
+      - { label: "Team Image", name: "image", widget: "image" }
+      - { label: "Team Designation", name: "designation", widget: "string" }
+      - { label: "Social Link", name: "social", widget: "string" }
+      - { label: "Team Type", name: "type", widget: "string" }
+
+
+  - name: 'contact'
+    label: 'Contact'
+    folder: 'content/english/contact'
+    create: false
+    fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'PageHeaderBg', name: 'page_header_bg', widget: 'image' }
+        - { label: 'MainTitle', name: 'main_title', widget: 'string'}
+        - { label: 'Description', name: 'description', widget: 'image'}
+        - { label: 'draft', name: 'draft', widget: 'string'}
+
+ 
+
+  
+  - name: "Blog" 
+    label: "Blog"
+    folder: "content/english/blogs/all-blogs"
+    create: true
+    fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        # - { label: 'PageHeaderBg', name: 'page_header_bg', widget: 'image', }
+        - { label: 'Slug', name: 'slug', widget: 'string' }
+        - { label: 'Publish Date', name: 'date', widget: 'date' }
+        - { label: 'draft', name: 'draft', widget: 'boolean',  default: false}
+        - { label: 'Blog Image', name: 'image', widget: 'image'}
+        - { label: 'Blog Background Image', name: 'bg_image', widget: 'image'}
+        - { label: 'BlogTitle', name: 'blogtitle', widget: 'string' }
+        - { label: 'BlogDescription', name: 'blogdescription', widget: 'string' }
+        - { label: 'Type', name: 'types', widget: 'string', }
+        - { label: 'Blog post content', name: 'body', widget: 'markdown' }
+
+ 
+  
+   
+ 
+ 
+
+ 
+
+  
+   
+  
+ 
+  
+  
+ 
+  
+   
+  
+  
+   
+  
+  
+  
