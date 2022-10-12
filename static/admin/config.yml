@@ -10,11 +10,11 @@ collections:
     create: false
     fields:
       - { label: "Home", name: "title", widget: "string" }
-      - { label: "Header Image", name: "header_image", widget: "image" }
-      - { label: "Header Heading", name: "header_heading", widget: "string" }
-      - { label: "Header Content", name: "header_content", widget: "string" }
-      - { label: "User Image", name: "user_image", widget: "image" }
-      - { label: "Users", name: "users", widget: "string" }
+      - { label: "Banner Image", name: "banner_image", widget: "image" }
+      - { label: "Welcome Heading", name: "welcome_heading", widget: "string" }
+      - { label: "Welcome Description", name: "welcome_description", widget: "string" }
+      - { label: "Welcome Content", name: "welcome_content", widget: "image" }
+      - { label: "Solar Steps Heading", name: "solar_steps_heading", widget: "string" }
 
   - name: "Header" 
     label: "Header"
