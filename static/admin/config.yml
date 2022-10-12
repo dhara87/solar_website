@@ -13,7 +13,7 @@ collections:
       - { label: "Banner Image", name: "banner_image", widget: "image" }
       - { label: "Welcome Heading", name: "welcome_heading", widget: "string" }
       - { label: "Welcome Description", name: "welcome_description", widget: "string" }
-      - { label: "Welcome Content", name: "welcome_content", widget: "image" }
+      - { label: "Welcome Content", name: "welcome_content", widget: "string" }
       - { label: "Solar Steps Heading", name: "solar_steps_heading", widget: "string" }
 
   - name: "Header" 
