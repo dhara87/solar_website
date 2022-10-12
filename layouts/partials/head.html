@@ -18,12 +18,14 @@
   <link rel="stylesheet" href="{{ .link | absURL }}">
   {{ end }}
 
+  <link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $styles := resources.Get "scss/style.scss" | toCSS }}  */}}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  {{/*  {{ $styles := resources.Get "scss/style.scss" | toCSS }}  */}}  
+  {{/*  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">  */}}
 
   {{ $preset3 := resources.Get "presets/preset3.css" }} 
-	<link id="style-switch" href="{{ $preset3.Permalink }}" media="screen" rel="stylesheet" type="text/css">
+	{{/*  <link id="style-switch" href="{{ $preset3.Permalink }}" media="screen" rel="stylesheet" type="text/css">  */}}
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/atcults-fevicon.jpg` | absURL }}" type="image/x-icon">
